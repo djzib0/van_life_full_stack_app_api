@@ -24,4 +24,9 @@ public class VanController {
     public Van getVanById(@PathVariable Long id) {
         return vanService.getVanById(id);
     }
+
+    @GetMapping("data/vans/host/{id}")
+    public List<Van> getAllVansByHostId(@PathVariable Long id) {
+        return vanService.getAllVansByHostId(id);
+    }
 }

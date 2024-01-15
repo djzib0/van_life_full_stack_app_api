@@ -20,4 +20,8 @@ public class VanService {
     public Van getVanById(Long id) {
         return vanRepository.findById(id).orElseThrow();
     }
+
+    public List<Van> getAllVansByHostId(Long id) {
+        return vanRepository.findAllByHostId(id);
+    }
 }
