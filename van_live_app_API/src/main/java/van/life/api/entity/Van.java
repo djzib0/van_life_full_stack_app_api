@@ -15,7 +15,8 @@ public class Van {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name="van_id")
+    private Long vanId;
     private String name;
     private Integer price;
     private String description;
@@ -23,4 +24,6 @@ public class Van {
     private String type;
     @Column(name="host_id")
     private Long hostId;
+    @OneToOne(mappedBy = "van", fetch = FetchType.LAZY)
+    private Engine engine;
 }

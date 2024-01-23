@@ -1,4 +1,4 @@
-INSERT INTO host(id, first_name, last_name, login, email) VALUES(
+INSERT INTO host(host_id, first_name, last_name, login, email) VALUES(
 123,
 'Piotr',
 'Sabatura',
@@ -6,7 +6,7 @@ INSERT INTO host(id, first_name, last_name, login, email) VALUES(
 'ps@gmail.com'
 );
 
-INSERT INTO host(id, first_name, last_name, login, email) VALUES(
+INSERT INTO host(host_id, first_name, last_name, login, email) VALUES(
 789,
 'Aleksandra',
 'Choinska',
@@ -14,7 +14,7 @@ INSERT INTO host(id, first_name, last_name, login, email) VALUES(
 'ct@yahoo.com'
 );
 
-INSERT INTO host(id, first_name, last_name, login, email) VALUES(
+INSERT INTO host(host_id, first_name, last_name, login, email) VALUES(
 456,
 'Mikolaj',
 'Maruta',
@@ -22,7 +22,7 @@ INSERT INTO host(id, first_name, last_name, login, email) VALUES(
 'fatboynotslim@wp.pl'
 );
 
-INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
+INSERT INTO van(van_id, name, price, description, image_url, type, host_id) VALUES(
 1,
 'Modest Explorer',
 60,
@@ -32,7 +32,7 @@ INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
 123
  );
 
-INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
+INSERT INTO van(van_id, name, price, description, image_url, type, host_id) VALUES(
 2,
 'Beach Bum',
 80,
@@ -42,7 +42,7 @@ INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
 123
 );
 
-INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
+INSERT INTO van(van_id, name, price, description, image_url, type, host_id) VALUES(
 3,
 'Reliable Red',
 100,
@@ -52,7 +52,7 @@ INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
 456
 );
 
-INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
+INSERT INTO van(van_id, name, price, description, image_url, type, host_id) VALUES(
 4,
 'Dreamfinder',
 65,
@@ -62,7 +62,7 @@ INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
 789
 );
 
-INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
+INSERT INTO van(van_id, name, price, description, image_url, type, host_id) VALUES(
 5,
 'The Cruiser',
 120,
@@ -72,7 +72,7 @@ INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
 789
 );
 
-INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
+INSERT INTO van(van_id, name, price, description, image_url, type, host_id) VALUES(
 6,
 'Green Wonder',
 70,
@@ -81,4 +81,10 @@ INSERT INTO van(id, name, price, description, image_url, type, host_id) VALUES(
 'rugged',
 123
 );
+
+INSERT INTO engine(engine_id, serial_number, van_id ) VALUES (
+1,
+'3NG1N3',
+2
+)
 

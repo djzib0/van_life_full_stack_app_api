@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 import van.life.api.entity.Host;
 import van.life.api.service.HostService;
 
+import java.util.List;
+
 @RestController
 public class HostController {
 
@@ -16,5 +18,10 @@ public class HostController {
     @GetMapping("/data/hosts/{id}")
     public Host getHost(@PathVariable Long id) {
         return hostService.getHost(id);
+    }
+
+    @GetMapping("/data/hosts")
+    public List<Host> getAllHosts() {
+        return hostService.getAllHosts();
     }
 }

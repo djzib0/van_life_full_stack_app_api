@@ -15,12 +15,12 @@ import java.util.List;
 public class Host {
 
     @Id
-    private Long id;
+    private Long hostId;
     private String firstName;
     private String lastName;
     private String login;
     private String email;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "host_id")
     private List<Van> vans;
 }
